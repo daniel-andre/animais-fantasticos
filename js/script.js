@@ -26,7 +26,6 @@ const tooltip = new Tooltip('[data-tooltip]');
 tooltip.init();
 
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
-console.log(scrollAnima);
 scrollAnima.init();
 
 initDropdownMenu();
