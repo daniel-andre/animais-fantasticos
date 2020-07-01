@@ -1,4 +1,4 @@
-export default class initModal {
+export default class Modal {
   constructor(botaoAbrir, botaoFechar, containerModal) {
     this.botaoAbrir = document.querySelector(botaoAbrir);
     this.botaoFechar = document.querySelector(botaoFechar);
@@ -31,7 +31,7 @@ export default class initModal {
   addModalEvents() {
     this.botaoAbrir.addEventListener('click', this.eventToggleModal);
     this.botaoFechar.addEventListener('click', this.eventToggleModal);
-    this.containerModal.addEventListener('click', this.eventToggleModal);
+    this.containerModal.addEventListener('click', this.cliqueForaModal);
   }
 
   init() {
